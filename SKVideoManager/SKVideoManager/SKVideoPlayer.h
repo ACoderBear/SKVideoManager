@@ -52,8 +52,9 @@
                 bufferingProgress:(void(^)(float totoalBuffer))bufferingProgress
                      playProgress:(void(^)(float currentTime, float duration))playProgress
                        playDidEnd:(void(^)())playDidEnd;
-/** 播放/暂停 */
+/** 播放 */
 - (void)play;
+/** 暂停 */
 - (void)pause;
 /** 停止播放 */
 - (void)stop;
