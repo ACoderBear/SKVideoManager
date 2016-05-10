@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		881C2A371CC472ED007B0E7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C2A361CC472ED007B0E7F /* main.m */; };
+		881C2A3A1CC472EE007B0E7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C2A391CC472EE007B0E7F /* AppDelegate.m */; };
+		881C2A421CC472EE007B0E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881C2A411CC472EE007B0E7F /* Assets.xcassets */; };
+		881C2A451CC472EE007B0E7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881C2A431CC472EE007B0E7F /* LaunchScreen.storyboard */; };
+		881C2A501CC472EE007B0E7F /* SKVideoManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C2A4F1CC472EE007B0E7F /* SKVideoManagerTests.m */; };
+		881C2A5B1CC472EE007B0E7F /* SKVideoManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C2A5A1CC472EE007B0E7F /* SKVideoManagerUITests.m */; };
+		881C2A6B1CC473B2007B0E7F /* SKVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C2A6A1CC473B2007B0E7F /* SKVideoCapture.m */; };
+		881C2A6E1CC473E0007B0E7F /* SKVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C2A6D1CC473E0007B0E7F /* SKVideoPlayer.m */; };
+		881F32451CC5CD910095299F /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F32441CC5CD910095299F /* PlayerViewController.m */; };
+		8898FCE71CE1DDA600363C20 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8898FCE61CE1DDA600363C20 /* HomeViewController.m */; };
+		88E7A2061CC7831A0018109C /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E7A2051CC7831A0018109C /* CaptureViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		881C2A4C1CC472EE007B0E7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 881C2A2A1CC472ED007B0E7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 881C2A311CC472ED007B0E7F;
+			remoteInfo = SKVideoManager;
+		};
+		881C2A571CC472EE007B0E7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 881C2A2A1CC472ED007B0E7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 881C2A311CC472ED007B0E7F;
+			remoteInfo = SKVideoManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		881C2A321CC472ED007B0E7F /* SKVideoManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKVideoManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		881C2A361CC472ED007B0E7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		881C2A381CC472EE007B0E7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		881C2A391CC472EE007B0E7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		881C2A411CC472EE007B0E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		881C2A441CC472EE007B0E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		881C2A461CC472EE007B0E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		881C2A4B1CC472EE007B0E7F /* SKVideoManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKVideoManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		881C2A4F1CC472EE007B0E7F /* SKVideoManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKVideoManagerTests.m; sourceTree = "<group>"; };
+		881C2A511CC472EE007B0E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		881C2A561CC472EE007B0E7F /* SKVideoManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKVideoManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		881C2A5A1CC472EE007B0E7F /* SKVideoManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKVideoManagerUITests.m; sourceTree = "<group>"; };
+		881C2A5C1CC472EE007B0E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		881C2A691CC473B2007B0E7F /* SKVideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKVideoCapture.h; sourceTree = "<group>"; };
+		881C2A6A1CC473B2007B0E7F /* SKVideoCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKVideoCapture.m; sourceTree = "<group>"; };
+		881C2A6C1CC473E0007B0E7F /* SKVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKVideoPlayer.h; sourceTree = "<group>"; };
+		881C2A6D1CC473E0007B0E7F /* SKVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKVideoPlayer.m; sourceTree = "<group>"; };
+		881F32431CC5CD910095299F /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		881F32441CC5CD910095299F /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		8898FCE51CE1DDA600363C20 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		8898FCE61CE1DDA600363C20 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		88E7A2041CC7831A0018109C /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
+		88E7A2051CC7831A0018109C /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		881C2A2F1CC472ED007B0E7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881C2A481CC472EE007B0E7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881C2A531CC472EE007B0E7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		881C2A291CC472ED007B0E7F = {
+			isa = PBXGroup;
+			children = (
+				881C2A341CC472ED007B0E7F /* SKVideoManager */,
+				881C2A4E1CC472EE007B0E7F /* SKVideoManagerTests */,
+				881C2A591CC472EE007B0E7F /* SKVideoManagerUITests */,
+				881C2A331CC472ED007B0E7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		881C2A331CC472ED007B0E7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				881C2A321CC472ED007B0E7F /* SKVideoManager.app */,
+				881C2A4B1CC472EE007B0E7F /* SKVideoManagerTests.xctest */,
+				881C2A561CC472EE007B0E7F /* SKVideoManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		881C2A341CC472ED007B0E7F /* SKVideoManager */ = {
+			isa = PBXGroup;
+			children = (
+				881C2A681CC4735F007B0E7F /* SKVideoManager */,
+				881C2A381CC472EE007B0E7F /* AppDelegate.h */,
+				881C2A391CC472EE007B0E7F /* AppDelegate.m */,
+				8898FCE51CE1DDA600363C20 /* HomeViewController.h */,
+				8898FCE61CE1DDA600363C20 /* HomeViewController.m */,
+				88E7A2041CC7831A0018109C /* CaptureViewController.h */,
+				88E7A2051CC7831A0018109C /* CaptureViewController.m */,
+				881F32431CC5CD910095299F /* PlayerViewController.h */,
+				881F32441CC5CD910095299F /* PlayerViewController.m */,
+				881C2A351CC472ED007B0E7F /* Supporting Files */,
+			);
+			path = SKVideoManager;
+			sourceTree = "<group>";
+		};
+		881C2A351CC472ED007B0E7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				881C2A411CC472EE007B0E7F /* Assets.xcassets */,
+				881C2A431CC472EE007B0E7F /* LaunchScreen.storyboard */,
+				881C2A461CC472EE007B0E7F /* Info.plist */,
+				881C2A361CC472ED007B0E7F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		881C2A4E1CC472EE007B0E7F /* SKVideoManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				881C2A4F1CC472EE007B0E7F /* SKVideoManagerTests.m */,
+				881C2A511CC472EE007B0E7F /* Info.plist */,
+			);
+			path = SKVideoManagerTests;
+			sourceTree = "<group>";
+		};
+		881C2A591CC472EE007B0E7F /* SKVideoManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				881C2A5A1CC472EE007B0E7F /* SKVideoManagerUITests.m */,
+				881C2A5C1CC472EE007B0E7F /* Info.plist */,
+			);
+			path = SKVideoManagerUITests;
+			sourceTree = "<group>";
+		};
+		881C2A681CC4735F007B0E7F /* SKVideoManager */ = {
+			isa = PBXGroup;
+			children = (
+				881C2A691CC473B2007B0E7F /* SKVideoCapture.h */,
+				881C2A6A1CC473B2007B0E7F /* SKVideoCapture.m */,
+				881C2A6C1CC473E0007B0E7F /* SKVideoPlayer.h */,
+				881C2A6D1CC473E0007B0E7F /* SKVideoPlayer.m */,
+			);
+			path = SKVideoManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		881C2A311CC472ED007B0E7F /* SKVideoManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 881C2A5F1CC472EE007B0E7F /* Build configuration list for PBXNativeTarget "SKVideoManager" */;
+			buildPhases = (
+				881C2A2E1CC472ED007B0E7F /* Sources */,
+				881C2A2F1CC472ED007B0E7F /* Frameworks */,
+				881C2A301CC472ED007B0E7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKVideoManager;
+			productName = SKVideoManager;
+			productReference = 881C2A321CC472ED007B0E7F /* SKVideoManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		881C2A4A1CC472EE007B0E7F /* SKVideoManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 881C2A621CC472EE007B0E7F /* Build configuration list for PBXNativeTarget "SKVideoManagerTests" */;
+			buildPhases = (
+				881C2A471CC472EE007B0E7F /* Sources */,
+				881C2A481CC472EE007B0E7F /* Frameworks */,
+				881C2A491CC472EE007B0E7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				881C2A4D1CC472EE007B0E7F /* PBXTargetDependency */,
+			);
+			name = SKVideoManagerTests;
+			productName = SKVideoManagerTests;
+			productReference = 881C2A4B1CC472EE007B0E7F /* SKVideoManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		881C2A551CC472EE007B0E7F /* SKVideoManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 881C2A651CC472EE007B0E7F /* Build configuration list for PBXNativeTarget "SKVideoManagerUITests" */;
+			buildPhases = (
+				881C2A521CC472EE007B0E7F /* Sources */,
+				881C2A531CC472EE007B0E7F /* Frameworks */,
+				881C2A541CC472EE007B0E7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				881C2A581CC472EE007B0E7F /* PBXTargetDependency */,
+			);
+			name = SKVideoManagerUITests;
+			productName = SKVideoManagerUITests;
+			productReference = 881C2A561CC472EE007B0E7F /* SKVideoManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		881C2A2A1CC472ED007B0E7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = PoloStoneK;
+				TargetAttributes = {
+					881C2A311CC472ED007B0E7F = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MT8XE2YBX7;
+					};
+					881C2A4A1CC472EE007B0E7F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 881C2A311CC472ED007B0E7F;
+					};
+					881C2A551CC472EE007B0E7F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 881C2A311CC472ED007B0E7F;
+					};
+				};
+			};
+			buildConfigurationList = 881C2A2D1CC472ED007B0E7F /* Build configuration list for PBXProject "SKVideoManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 881C2A291CC472ED007B0E7F;
+			productRefGroup = 881C2A331CC472ED007B0E7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				881C2A311CC472ED007B0E7F /* SKVideoManager */,
+				881C2A4A1CC472EE007B0E7F /* SKVideoManagerTests */,
+				881C2A551CC472EE007B0E7F /* SKVideoManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		881C2A301CC472ED007B0E7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881C2A451CC472EE007B0E7F /* LaunchScreen.storyboard in Resources */,
+				881C2A421CC472EE007B0E7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881C2A491CC472EE007B0E7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881C2A541CC472EE007B0E7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		881C2A2E1CC472ED007B0E7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881C2A6B1CC473B2007B0E7F /* SKVideoCapture.m in Sources */,
+				881C2A6E1CC473E0007B0E7F /* SKVideoPlayer.m in Sources */,
+				881C2A3A1CC472EE007B0E7F /* AppDelegate.m in Sources */,
+				881C2A371CC472ED007B0E7F /* main.m in Sources */,
+				881F32451CC5CD910095299F /* PlayerViewController.m in Sources */,
+				8898FCE71CE1DDA600363C20 /* HomeViewController.m in Sources */,
+				88E7A2061CC7831A0018109C /* CaptureViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881C2A471CC472EE007B0E7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881C2A501CC472EE007B0E7F /* SKVideoManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		881C2A521CC472EE007B0E7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881C2A5B1CC472EE007B0E7F /* SKVideoManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		881C2A4D1CC472EE007B0E7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 881C2A311CC472ED007B0E7F /* SKVideoManager */;
+			targetProxy = 881C2A4C1CC472EE007B0E7F /* PBXContainerItemProxy */;
+		};
+		881C2A581CC472EE007B0E7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 881C2A311CC472ED007B0E7F /* SKVideoManager */;
+			targetProxy = 881C2A571CC472EE007B0E7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		881C2A431CC472EE007B0E7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				881C2A441CC472EE007B0E7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		881C2A5D1CC472EE007B0E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		881C2A5E1CC472EE007B0E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		881C2A601CC472EE007B0E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SKVideoManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shen-mo-gui.SKVideoManager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		881C2A611CC472EE007B0E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SKVideoManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shen-mo-gui.SKVideoManager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		881C2A631CC472EE007B0E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SKVideoManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shen-mo-gui.SKVideoManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKVideoManager.app/SKVideoManager";
+			};
+			name = Debug;
+		};
+		881C2A641CC472EE007B0E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SKVideoManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shen-mo-gui.SKVideoManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKVideoManager.app/SKVideoManager";
+			};
+			name = Release;
+		};
+		881C2A661CC472EE007B0E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SKVideoManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shen-mo-gui.SKVideoManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SKVideoManager;
+			};
+			name = Debug;
+		};
+		881C2A671CC472EE007B0E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SKVideoManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shen-mo-gui.SKVideoManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SKVideoManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		881C2A2D1CC472ED007B0E7F /* Build configuration list for PBXProject "SKVideoManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				881C2A5D1CC472EE007B0E7F /* Debug */,
+				881C2A5E1CC472EE007B0E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		881C2A5F1CC472EE007B0E7F /* Build configuration list for PBXNativeTarget "SKVideoManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				881C2A601CC472EE007B0E7F /* Debug */,
+				881C2A611CC472EE007B0E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		881C2A621CC472EE007B0E7F /* Build configuration list for PBXNativeTarget "SKVideoManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				881C2A631CC472EE007B0E7F /* Debug */,
+				881C2A641CC472EE007B0E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		881C2A651CC472EE007B0E7F /* Build configuration list for PBXNativeTarget "SKVideoManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				881C2A661CC472EE007B0E7F /* Debug */,
+				881C2A671CC472EE007B0E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 881C2A2A1CC472ED007B0E7F /* Project object */;
+}
