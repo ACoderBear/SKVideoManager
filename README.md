@@ -1,6 +1,6 @@
 # SKVideoManager
 A video manager with videoCapture and videoPlayer.
-includ tow tools, the tools support you API to manager a video with out any UI, you can DIY your own UI with it
+The 2 tools just support APIs, UI is not supported.
 
 ##Screen shoot
 
