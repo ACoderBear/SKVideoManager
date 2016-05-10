@@ -53,7 +53,8 @@
                      playProgress:(void(^)(float currentTime, float duration))playProgress
                        playDidEnd:(void(^)())playDidEnd;
 /** 播放/暂停 */
-- (void)playPause;
+- (void)play;
+- (void)pause;
 /** 停止播放 */
 - (void)stop;
 /** 快进：传入快进秒数 */

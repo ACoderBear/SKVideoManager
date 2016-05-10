@@ -32,6 +32,9 @@
     // 回调播放时机
     [player videoPlayerDidReadyToPlay:^(BOOL loadVideoSucceed, float duration, NSString *durationFormatStr) {
         NSLog(@"----loadVideoSucceed:%d----duration:%.2f---Str:%@", loadVideoSucceed, duration, durationFormatStr);
+        if (loadVideoSucceed) {
+            [_player play];
+        }
     } play:^{
         NSLog(@"----play----");
     } pause:^{
@@ -53,8 +56,10 @@
 - (void)interactiveBtnClick:(UIButton *)sender {
     switch (sender.tag) {
         case 0:
+            [_player play];
+            break;
         case 1:
-            [_player playPause];
+            [_player pause];
             break;
         case 2:
             [_player stop];

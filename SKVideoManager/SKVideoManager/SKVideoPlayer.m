@@ -22,8 +22,8 @@
 
 /** 转义时机block，见头文件方法内block说明 */
 @property (copy, nonatomic) void(^readyToPlay)(BOOL loadVideoSucceed, float duration, NSString *durationFormatStr);
-@property (copy, nonatomic) void(^play)();
-@property (copy, nonatomic) void(^pause)();
+@property (copy, nonatomic) void(^playBlock)();
+@property (copy, nonatomic) void(^pauseBlock)();
 @property (copy, nonatomic) void(^playbackBufferEmpty)();
 @property (copy, nonatomic) void(^playbackLikelyToKeepUp)();
 @property (copy, nonatomic) void(^bufferingProgress)(float totoalBuffer);
@@ -82,13 +82,17 @@
 }
 
 /** 播放/暂停 */
-- (void)playPause {
+- (void)play{
     if (_videoPlayer.rate == 0.0) { // 0.0: stopped
         [_videoPlayer play];
-        self.play();
-    }else if (_videoPlayer.rate == 1.0) { // 1.0: play at the natural rate of the current item
+        self.playBlock();
+    }
+}
+
+- (void)pause {
+    if (_videoPlayer.rate == 1.0) { // 1.0: play at the natural rate of the current item
         [_videoPlayer pause];
-        self.pause();
+        self.pauseBlock();
     }
 }
 
@@ -237,8 +241,8 @@
                      playProgress:(void(^)(float currentTime, float duration))playProgress
                        playDidEnd:(void(^)())playDidEnd {
     _readyToPlay = ready;
-    _play = play;
-    _pause = pause;
+    _playBlock = play;
+    _pauseBlock = pause;
     _playbackBufferEmpty = bufferEmpty;
     _playbackLikelyToKeepUp = keepUp;
     _bufferingProgress = bufferingProgress;
